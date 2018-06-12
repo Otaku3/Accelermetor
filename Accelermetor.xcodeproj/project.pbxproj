@@ -15,6 +15,10 @@
 		662DF06E20D019DC00B86310 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 662DF06C20D019DC00B86310 /* LaunchScreen.storyboard */; };
 		662DF07920D019DC00B86310 /* AccelermetorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662DF07820D019DC00B86310 /* AccelermetorTests.swift */; };
 		662DF08420D019DC00B86310 /* AccelermetorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662DF08320D019DC00B86310 /* AccelermetorUITests.swift */; };
+		662DF09420D01AE100B86310 /* awa.png in Resources */ = {isa = PBXBuildFile; fileRef = 662DF09220D01AE100B86310 /* awa.png */; };
+		662DF09520D01AE100B86310 /* suiheiki.png in Resources */ = {isa = PBXBuildFile; fileRef = 662DF09320D01AE100B86310 /* suiheiki.png */; };
+		662DF09720D01C4A00B86310 /* MeasureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662DF09620D01C4A00B86310 /* MeasureViewController.swift */; };
+		662DF09920D01C5B00B86310 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662DF09820D01C5B00B86310 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		662DF07F20D019DC00B86310 /* AccelermetorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccelermetorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		662DF08320D019DC00B86310 /* AccelermetorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelermetorUITests.swift; sourceTree = "<group>"; };
 		662DF08520D019DC00B86310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		662DF09220D01AE100B86310 /* awa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awa.png; sourceTree = "<group>"; };
+		662DF09320D01AE100B86310 /* suiheiki.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = suiheiki.png; sourceTree = "<group>"; };
+		662DF09620D01C4A00B86310 /* MeasureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureViewController.swift; sourceTree = "<group>"; };
+		662DF09820D01C5B00B86310 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +107,11 @@
 		662DF05F20D019DB00B86310 /* Accelermetor */ = {
 			isa = PBXGroup;
 			children = (
+				662DF09120D01AE100B86310 /* 13_Resource */,
 				662DF06020D019DB00B86310 /* AppDelegate.swift */,
 				662DF06220D019DB00B86310 /* ViewController.swift */,
+				662DF09620D01C4A00B86310 /* MeasureViewController.swift */,
+				662DF09820D01C5B00B86310 /* ResultViewController.swift */,
 				662DF06420D019DB00B86310 /* Main.storyboard */,
 				662DF06A20D019DC00B86310 /* Assets.xcassets */,
 				662DF06C20D019DC00B86310 /* LaunchScreen.storyboard */,
@@ -126,6 +137,15 @@
 				662DF08520D019DC00B86310 /* Info.plist */,
 			);
 			path = AccelermetorUITests;
+			sourceTree = "<group>";
+		};
+		662DF09120D01AE100B86310 /* 13_Resource */ = {
+			isa = PBXGroup;
+			children = (
+				662DF09220D01AE100B86310 /* awa.png */,
+				662DF09320D01AE100B86310 /* suiheiki.png */,
+			);
+			path = 13_Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +254,9 @@
 			files = (
 				662DF06E20D019DC00B86310 /* LaunchScreen.storyboard in Resources */,
 				662DF06B20D019DC00B86310 /* Assets.xcassets in Resources */,
+				662DF09520D01AE100B86310 /* suiheiki.png in Resources */,
 				662DF06620D019DB00B86310 /* Main.storyboard in Resources */,
+				662DF09420D01AE100B86310 /* awa.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +281,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				662DF09920D01C5B00B86310 /* ResultViewController.swift in Sources */,
 				662DF06320D019DB00B86310 /* ViewController.swift in Sources */,
 				662DF06120D019DB00B86310 /* AppDelegate.swift in Sources */,
 				662DF06920D019DB00B86310 /* Accelermetor.xcdatamodeld in Sources */,
+				662DF09720D01C4A00B86310 /* MeasureViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +461,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6JB2SDQGN3;
 				INFOPLIST_FILE = Accelermetor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,6 +480,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6JB2SDQGN3;
 				INFOPLIST_FILE = Accelermetor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
